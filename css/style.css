@@ -6,6 +6,7 @@
   
   body{
     background: #4489AD;
+    font-family: "Audiowide", sans-serif !important;
   }
 
   a {
@@ -19,36 +20,45 @@
     align-items: center;
     min-height: 55px;
     background: #4489AD;
-    padding: 5px 15px;
+    padding: 10px 35px;
   }
   
   .header h1 {
     color: #fff;
   }
-  a.toggle-nav {
-    color: #fff;
-    line-height: 25px;
-    font-size: 22px;
-    background: #de5939;
-    padding: 3px 5px;
-    border-radius: 1px;
-    transform: rotate(90deg);
-  }
+
   .header > .left-head {
     display: block;
     background: #4489AD;
   }
+
+  .logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .logo h1{
+    font-size: 30px;
+  }
+
+  .logo img{
+    width: 40px;
+    height: 40px;
+    margin-right: 8px;
+  }
   
   .nice-nav {
-    width: 280px;
+    width: 320px;
     background: #4489AD;
     height: 100vh;
     transition: all 0.4s ease-in-out 0s;
     float: left;
     position: relative;
   }
+
   .nice-nav.open {
-    margin-left: -280px;
+    margin-left: -320px;
     display: block;
   }
   
@@ -57,4 +67,46 @@
     padding: 15px;
     border-radius: 30px 30px 0px 0px;
     background-color: #fff;
+  }
+
+  .xp-nvl{
+    width: 100%;
+    padding-left: 20px;
+  }
+
+  .content-xp{
+    display: flex;
+    align-items: center;
+  }
+
+
+  .nvl{
+    width: 100%;
+    position: relative;
+    left: -25px;
+  }
+
+  .img-xp{
+    z-index: 1;
+  }
+
+  .nvl-number,
+  .xp{
+    text-align: center;
+    background-color: #fff;
+    width: 80%;
+  }
+
+  .xp{
+    height: 15px;
+    width: 75%;
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .nvl-number{
+    border-radius: 35px;
+    color: #5E548E;
   }
