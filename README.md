@@ -4,7 +4,7 @@
   <ul>
     <li>HTML</li>
     <li>CSS</li>
-    <li>BOOTSTRAP</li>
+    <li>DESIGN RESPONSIVO</li>
     <li>JAVASCRIPT</li>
     <li>JQUERY</li>
   </ul>
