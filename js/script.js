@@ -3,5 +3,7 @@ $(document).ready(function () {
       var nav = $(".nice-nav");
       nav.toggleClass("open");
     });
+
+  
   });
   

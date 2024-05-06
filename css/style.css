@@ -21,8 +21,10 @@
     min-height: 55px;
     background: #4489AD;
     padding: 10px 35px;
+
   }
   
+
   .header h1 {
     color: #fff;
   }
@@ -55,6 +57,7 @@
     transition: all 0.4s ease-in-out 0s;
     float: left;
     position: relative;
+    z-index: 10;
   }
 
   .nice-nav.open {
@@ -62,12 +65,7 @@
     display: block;
   }
   
-  main{
-    height: 100vh;
-    padding: 15px;
-    border-radius: 30px 30px 0px 0px;
-    background-color: #fff;
-  }
+  
 
   .xp-nvl{
     width: 100%;
@@ -83,7 +81,7 @@
   .nvl{
     width: 100%;
     position: relative;
-    left: -25px;
+    left: -28px;
   }
 
   .img-xp{
@@ -95,12 +93,14 @@
     text-align: center;
     background-color: #fff;
     width: 80%;
+    text-transform: uppercase;
   }
 
   .xp{
     height: 15px;
     width: 75%;
     font-size: 12px;
+    margin-top: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -109,4 +109,66 @@
   .nvl-number{
     border-radius: 35px;
     color: #5E548E;
+    padding: 6px 0px;
+  }
+
+  .nice-nav ul li{
+    width: 70%;
+    padding: 10px;
+    margin-left: 15px;
+    margin-bottom: 20px;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    text-align: center;
+  }
+
+  .nice-nav ul li a{
+    color: #fff;
+  }
+
+  .home-link{
+    padding: 10px 0px;
+    border-radius: 0px 25px 25px 0px;
+    background-color: #fff;
+    
+  }
+
+  .home-link a{
+    color: #4489AD !important;
+  }
+
+  .nice-nav ul li img{
+    margin-right: 10px;
+  }
+
+  /*MAIN*/
+
+  main{
+    height: 100vh;
+    padding: 0px 30px;
+    padding-top: 50px;
+    border-radius: 30px 30px 0px 0px;
+    background-color: #fff;
+  }
+
+  .title_name{
+    width: 100%;
+    text-align: center;
+    color: #5E548E;
+    margin-bottom: 30px;
+  }
+
+  main .container h5{
+    color: #5E548E;
+  }
+
+  main .container span{
+    width: 30px;
+    height: 10px;
+    border-radius: 50%;
+    font-size: 12px;
+    padding: 2px 5px;
+    background-color: #5E548E;
+    color: #fff;
   }
