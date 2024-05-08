@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
-    <title>Document</title>
+    <title>JáFiz - Gerenciamento de tarefas</title>
 </head>
 
 <body>
@@ -67,18 +67,59 @@
     </div>
 
     <main>
-        
-        <div class="container">
-            <div class="title_name">
-                <h2>Olá, Nome</h2>
-            </div>
-            <h5>Falta finalizar <span>3</span></h5>
-            <div class="cards">
-                <div class="card">
-                    teste
+        <section class="need-to-complete">
+            <div class="container">
+                <div class="title_name">
+                    <h2>Olá, Nome</h2>
+                </div>
+                <h5>Falta finalizar <span>3</span></h5>
+                <div class="cards">
+                    <div class="card">
+                        <div class="title-task">
+                            <h3>Tarefa 1</h3>
+                            <img src="images/marca-de-verificacao.png" alt="Check">
+                        </div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, sit asperiores temporibus adipisci consequuntur officia consequatur minus laboriosam esse impedit, veritatis repellendus perferendis repellat delectus beatae distinctio! Excepturi, molestiae nesciunt?</p>
+                    </div>
+                    <div class="card">
+                        <div class="title-task">
+                            <h3>Tarefa 1</h3>
+                            <img src="images/marca-de-verificacao.png" alt="Check">
+                        </div>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad nam sapiente provident doloribus, laboriosam odio</p>
+                    </div>
+                    <div class="card">
+                        <div class="title-task">
+                            <h3>Tarefa 1</h3>
+                            <img src="images/marca-de-verificacao.png" alt="Check">
+                        </div>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad nam sapiente provident doloribus, laboriosam odio</p>
+                    </div>
+                    <div class="card">
+                        <div class="title-task">
+                            <h3>Tarefa 1</h3>
+                            <img src="images/marca-de-verificacao.png" alt="Check">
+                        </div>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad nam sapiente provident doloribus, laboriosam odio</p>
+                    </div>
                 </div>
             </div>
-        </div>
+            
+        </section>
+        <section class="task-complete">
+            <div class="container">
+                <h5>Completo <span>3</span></h5>
+                <div class="cards">
+                    <div class="card">
+                        <div class="title-task">
+                            <h3>Tarefa 1</h3>
+                            <img src="images/x.png" alt="Excluir tarefa" width="24px">
+                        </div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, sit asperiores temporibus adipisci consequuntur officia consequatur minus laboriosam esse impedit, veritatis repellendus perferendis repellat delectus beatae distinctio! Excepturi, molestiae nesciunt?</p>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script src="js/script.js"></script>
