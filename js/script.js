@@ -25,7 +25,7 @@ $(document).ready(function () {
 
     // Adiciona tarefa
     const btnAdd = document.querySelector('.add-task');
-    let imgCheck = 'images/marca-de-verificacao.png'
+    let imgCheck = '<img src="./images/marca-de-verificacao.png" onclick="check(event)" alt="Check">'
     let tasks = ''
     let countNumber = 1;
     let count = document.querySelector('.count');
@@ -41,17 +41,56 @@ $(document).ready(function () {
       let task = '<div class="card">'
       task += `<div class="title-task">`;
       task += `<h3>${titleTask.value}</h3>`;
-      task += `<img src="${imgCheck}">`
+      task += `${imgCheck}`
       task += `</div>`;
-      task += `<p>${descriptionTask.value}</p>`
+      task += `<p class="description">${descriptionTask.value}</p>`
       task += '</div>';
-
-      tasks += task;
         
-      contentTask.innerHTML = tasks;
-      count.innerHTML = `${countNumber++}`;
+      contentTask.innerHTML += task; // Adiciona a nova tarefa diretamente ao HTML, sem atualizar toda a lista de tarefas
+      
+      function updateCount() {
+        const countElement = document.querySelector('.count-need-to-completed');
+        if (countElement) {
+            countElement.innerHTML = parseInt(countElement.innerHTML) + 1;
+        }
+      }
+    
+      updateCount();
 
       titleTask.value = '';
       descriptionTask.value = '';
     })
-  
+
+    function check(event){
+      // Obtém o elemento .card pai do elemento que acionou o evento
+      const card = event.target.closest('.card');
+      const description = document.querySelector('.description')
+
+      function updateCount() {
+        const countElement = document.querySelector('.count-need-to-completed');
+        if (countElement) {
+            countElement.innerHTML = parseInt(countElement.innerHTML) - 1;
+        }
+      }
+    
+      updateCount();
+
+      function updateCountCompleted() {
+        const countElement = document.querySelector('.count-completed');
+        if (countElement) {
+            countElement.innerHTML = parseInt(countElement.innerHTML) + 1;
+        }
+      }
+    
+      updateCountCompleted();
+
+      if (card) {
+          card.remove();
+          const completedTasksSection = document.querySelector('.cards-completed');
+          
+          completedTasksSection.appendChild(card);
+
+          card.classList.add('completed')
+          description.classList.add('desc-completed')
+      }
+  }

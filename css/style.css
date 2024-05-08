@@ -296,4 +296,16 @@
   cursor: pointer;
 }
 
+.completed{
+  color: #5E548E;
+}
+
+.desc-completed{
+  text-decoration: line-through;
+}
+
+.checkNone{
+  display: none;
+}
+
 
