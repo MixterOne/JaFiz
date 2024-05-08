@@ -18,6 +18,7 @@
             <a href="#" class="toggle-nav">
                 <img src="images/menu-aberto.png" alt="Menu">
             </a>
+            <img class="btn-add-task" id="openModal" src="images/botao.png" alt="Adicionar tarefa">
         </div>
         <div class="logo">
             <img src="images/logo.png" alt="Logo">
@@ -72,37 +73,8 @@
                 <div class="title_name">
                     <h2>Olá, Nome</h2>
                 </div>
-                <h5>Falta finalizar <span>3</span></h5>
-                <div class="cards">
-                    <div class="card">
-                        <div class="title-task">
-                            <h3>Tarefa 1</h3>
-                            <img src="images/marca-de-verificacao.png" alt="Check">
-                        </div>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, sit asperiores temporibus adipisci consequuntur officia consequatur minus laboriosam esse impedit, veritatis repellendus perferendis repellat delectus beatae distinctio! Excepturi, molestiae nesciunt?</p>
-                    </div>
-                    <div class="card">
-                        <div class="title-task">
-                            <h3>Tarefa 1</h3>
-                            <img src="images/marca-de-verificacao.png" alt="Check">
-                        </div>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad nam sapiente provident doloribus, laboriosam odio</p>
-                    </div>
-                    <div class="card">
-                        <div class="title-task">
-                            <h3>Tarefa 1</h3>
-                            <img src="images/marca-de-verificacao.png" alt="Check">
-                        </div>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad nam sapiente provident doloribus, laboriosam odio</p>
-                    </div>
-                    <div class="card">
-                        <div class="title-task">
-                            <h3>Tarefa 1</h3>
-                            <img src="images/marca-de-verificacao.png" alt="Check">
-                        </div>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad nam sapiente provident doloribus, laboriosam odio</p>
-                    </div>
-                </div>
+                <h5>Falta finalizar <span class="count">0</span></h5>
+                <div class="cards cards-need-to-complete"></div>
             </div>
             
         </section>
@@ -121,6 +93,23 @@
             </div>
         </section>
     </main>
+
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <div class="title-modal">
+                <h4>Adicionar tarefa</h4>
+                <span class="close">Cancelar</span>
+            </div>
+            <form>
+                <label for="titulo">Titulo</label>
+                <input type="text" id="titulo" required>
+                <label for="description">Descrição</label>
+                <textarea id="description" required></textarea>
+                <button type="submit" class="add-task">Adicionar</button>
+            </form>
+        </div>
+    </div>
+
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script src="js/script.js"></script>
 </body>
