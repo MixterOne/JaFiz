@@ -1,236 +1,237 @@
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-  }
-  
-  body{
-    background: #4489AD;
-    font-family: "Audiowide", sans-serif !important;
-  }
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
 
-  a {
-    text-decoration: none;
-  }
-  
-  .header {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    min-height: 55px;
-    background: #4489AD;
-    padding: 10px 20px;
+body {
+  background: #4489AD;
+  font-family: "Audiowide", sans-serif !important;
+}
 
-  }
-  
+a {
+  text-decoration: none;
+}
 
-  .header h1 {
-    color: #fff;
-  }
+.header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 55px;
+  background: #4489AD;
+  padding: 10px 20px;
 
-  .header > .left-head {
-    display: block;
-    background: #4489AD;
-  }
-
-  .left-head img{
-    margin-left: 8px;
-    cursor: pointer;
-  }
-
-  .logo{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .logo h1{
-    font-size: 30px;
-  }
-
-  .logo img{
-    width: 40px;
-    height: 40px;
-    margin-right: 8px;
-  }
-  
-  .nice-nav {
-    width: 320px;
-    background: #4489AD;
-    height: 100vh;
-    transition: all 0.4s ease-in-out 0s;
-    float: left;
-    position: relative;
-    z-index: 10;
-  }
-
-  .nice-nav.open {
-    margin-left: -320px;
-    display: block;
-  }
-  
-  
-
-  .xp-nvl{
-    width: 100%;
-    padding-left: 20px;
-  }
-
-  .content-xp{
-    display: flex;
-    align-items: center;
-  }
+}
 
 
-  .nvl{
-    width: 100%;
-    position: relative;
-    left: -28px;
-  }
+.header h1 {
+  color: #fff;
+}
 
-  .img-xp{
-    z-index: 1;
-  }
+.header>.left-head {
+  display: block;
+  background: #4489AD;
+}
 
-  .nvl-number,
-  .xp{
-    text-align: center;
-    background-color: #fff;
-    width: 80%;
-    text-transform: uppercase;
-  }
+.left-head img {
+  margin-left: 8px;
+  cursor: pointer;
+}
 
-  .xp{
-    height: 15px;
-    width: 75%;
-    font-size: 12px;
-    margin-top: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
-  .nvl-number{
-    border-radius: 35px;
-    color: #5E548E;
-    padding: 6px 0px;
-  }
+.logo h1 {
+  font-size: 30px;
+}
 
-  .nice-nav ul li{
-    width: 70%;
-    padding: 10px;
-    margin-left: 15px;
-    margin-bottom: 20px;
-    list-style: none;
-    display: flex;
-    align-items: center;
-    text-align: center;
-  }
+.logo img {
+  width: 40px;
+  height: 40px;
+  margin-right: 8px;
+}
 
-  .nice-nav ul li a{
-    color: #fff;
-  }
+.nice-nav {
+  width: 320px;
+  background: #4489AD;
+  height: 100vh;
+  transition: all 0.4s ease-in-out 0s;
+  float: left;
+  position: relative;
+  z-index: 10;
+}
 
-  .home-link{
-    padding: 10px 0px;
-    border-radius: 0px 25px 25px 0px;
-    background-color: #fff;
-    
-  }
+.nice-nav.open {
+  margin-left: -320px;
+  display: block;
+}
 
-  .home-link a{
-    color: #4489AD !important;
-  }
+.xp-nvl {
+  width: 100%;
+  padding-left: 20px;
+}
 
-  .nice-nav ul li img{
-    margin-right: 10px;
-  }
+.content-xp {
+  display: flex;
+  align-items: center;
+}
 
-  /*MAIN*/
+.nvl {
+  width: 100%;
+  position: relative;
+  left: -28px;
+}
 
-  main{
-    padding: 0px 30px;
-    padding-top: 50px;
-    border-radius: 30px 30px 0px 0px;
-    background-color: #fff;
-  }
+.img-xp {
+  z-index: 1;
+}
 
-  .title_name{
-    width: 100%;
-    text-align: center;
-    color: #5E548E;
-    margin-bottom: 30px;
-  }
+.nvl-number,
+.xp {
+  text-align: center;
+  background-color: #fff;
+  width: 80%;
+  text-transform: uppercase;
+}
 
-  main .container h5{
-    color: #5E548E;
-    margin-bottom: 10px;
-  }
+.xp {
+  height: 15px;
+  width: 75%;
+  font-size: 12px;
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
-  main .container span{
-    width: 30px;
-    height: 10px;
-    border-radius: 50%;
-    font-size: 12px;
-    padding: 2px 5px;
-    background-color: #5E548E;
-    color: #fff;
-  }
+.nvl-number {
+  border-radius: 35px;
+  color: #5E548E;
+  padding: 6px 0px;
+}
 
-  main .need-to-complete {
-    overflow-y: scroll;
-    height: 500px;
-    margin-bottom: 30px;
-  }
+.nice-nav ul li {
+  width: 70%;
+  padding: 10px;
+  margin-left: 15px;
+  margin-bottom: 20px;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
 
-  .task-complete{
-    overflow-y: scroll;
-    height: 500px;
-  }
+.nice-nav ul li a {
+  color: #fff;
+}
 
-  main .container{
-    margin: 0 auto;
-    max-width: 1280px;
-    width: 100%;
-  }
+.home-link {
+  padding: 10px 0px;
+  border-radius: 0px 25px 25px 0px;
+  background-color: #fff;
 
-  main .container .cards{
-    display: flex;
-    flex-wrap: wrap;
-    max-width: 100%;
-  }
+}
 
-  main .card{
-    width: 380px;
-    height: 150px;
-    border-radius: 25px;
-    padding: 10px;
-    margin-left: 10px;
-    margin-bottom: 10px;
-    background-color: #57548e1f;
-  }
+.home-link a {
+  color: #4489AD !important;
+}
 
-  main .card .title-task{
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 20px;
-    padding: 0 10px;
-  }
+.nice-nav ul li img {
+  margin-right: 10px;
+}
 
-  main .card p{
-    padding: 0 10px;
-    height: 65px;
-    overflow-y: scroll;
-  }
+/*MAIN*/
 
-  main .card img{
-    cursor: pointer;
-  }
+main {
+  padding: 0px 30px;
+  padding-top: 50px;
+  border-radius: 30px 30px 0px 0px;
+  background-color: #fff;
+}
 
-  /* The Modal (background) */
+.title_name {
+  width: 100%;
+  text-align: center;
+  color: #5E548E;
+  margin-bottom: 30px;
+}
+
+main .container h5 {
+  color: #5E548E;
+  margin-bottom: 10px;
+}
+
+main .container span {
+  width: 30px;
+  height: 10px;
+  border-radius: 50%;
+  font-size: 12px;
+  padding: 2px 5px;
+  background-color: #5E548E;
+  color: #fff;
+}
+
+main .need-to-complete {
+  overflow-y: scroll;
+  height: 500px;
+  margin-bottom: 30px;
+}
+
+.task-complete {
+  overflow-y: scroll;
+  height: 500px;
+}
+
+main .container {
+  margin: 0 auto;
+  max-width: 1280px;
+  width: 100%;
+}
+
+main .container .cards {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 100%;
+}
+
+main .card {
+  width: 380px;
+  height: 150px;
+  border-radius: 25px;
+  padding: 10px;
+  margin-left: 10px;
+  margin-bottom: 10px;
+  background-color: #57548e1f;
+}
+
+main .card .title-task {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  padding: 0 10px;
+}
+
+main .card .title-task img{
+  width: 25px;
+}
+
+main .card p {
+  padding: 0 10px;
+  height: 65px;
+  overflow-y: scroll;
+}
+
+main .card img {
+  cursor: pointer;
+}
+
+/* Modal */
 .modal {
   display: none;
   position: fixed;
@@ -240,10 +241,9 @@
   width: 100%;
   height: 100%;
   overflow: auto;
-  background-color: rgba(0,0,0,0.4);
+  background-color: rgba(0, 0, 0, 0.4);
 }
 
-/* Modal */
 .modal-content {
   background-color: #fefefe;
   margin: 15% auto;
@@ -251,7 +251,7 @@
   width: 540px;
 }
 
-.modal-content .title-modal{
+.modal-content .title-modal {
   background-color: #4489AD;
   width: 100%;
   padding: 15px;
@@ -263,21 +263,22 @@
   color: #fff;
 }
 
-.modal-content form{
+.modal-content form {
   padding: 15px;
   display: flex;
   flex-direction: column;
 }
 
-.modal-content form label{
+.modal-content form label {
   margin: 10px 0px;
 }
 
-.modal-content form input, button{
+.modal-content form input,
+button {
   padding: 10px;
 }
 
-.modal-content form button{
+.modal-content form button {
   margin-top: 10px;
   background-color: #4489AD;
   color: #fff;
@@ -285,27 +286,23 @@
   border: none;
   letter-spacing: 2px;
 }
-.modal-content form textarea{
+
+.modal-content form textarea {
   height: 100px;
   resize: none;
   padding: 10px;
 }
+
 .close {
   color: #fff;
   font-weight: bold;
   cursor: pointer;
 }
 
-.completed{
+.completed {
   color: #5E548E;
 }
 
-.desc-completed{
+.desc-completed {
   text-decoration: line-through;
 }
-
-.checkNone{
-  display: none;
-}
-
-
