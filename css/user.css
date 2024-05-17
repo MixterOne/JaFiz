@@ -1,0 +1,41 @@
+main{
+    height: 100vh;
+}
+
+.boxesUser {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.boxFormUser{
+    width: 500px;
+}
+
+.boxFormUser form{
+    display: flex;
+    flex-direction: column;
+}
+
+.boxUser{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.boxUser img{
+    border: 1px solid black;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    margin-right: 10px;
+}
+
+.boxUser .nvlUser{
+    padding: 5px 14px;
+    background-color: #5E548E;
+    border-radius: 10px;
+    text-transform: uppercase;
+    align-items: center;
+    color: #FFF;
+}

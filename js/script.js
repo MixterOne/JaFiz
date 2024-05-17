@@ -11,8 +11,6 @@ let tasks = '';
 let countNumber = 1;
 let count = document.querySelector('.count');
 
-
-
 //Adiciona tarefa
 const btnAdd = document.querySelector('.add-task');
 
